@@ -17,4 +17,4 @@ if pilihan_user == 2:
         angka1 = int(input("ANGKA 1 : "))
         angka2 = int(input("ANGKA 2 : "))
         result = angka1 - angka2
-        print("HASIL KURANG : ", result)
+        print("HASIL KURANG2 : ", result)
