@@ -1,20 +1,18 @@
-# IF ELSE STATEMENT
+# program list buku
 
-print("PILIH OPERATOR BERIKUT, DENGAN KETIKKAN ANGKA")
-print("1. TAMBAH")
-print("2. KURANG")
+list_buku = []
+while True:
+    print("Masukkan data buku")
+    judul = input("Judul Buku\t: ")
+    penulis = input("Nama Penulis\t: ")
 
-pilihan_user = int(input("PILIHAN SAYA :\t"))
+    buku_item = [judul, penulis]
+    list_buku.append(buku_item)
 
-if pilihan_user > 2:
-        print("TIDAK ADA PILIHAN TERSEBUT")
-if pilihan_user == 1:
-        angka1 = int(input("ANGKA 1 : "))
-        angka2 = int(input("ANGKA 2 : "))
-        result = angka1 + angka2
-        print("HASIL TAMBAH : ", result)
-if pilihan_user == 2:
-        angka1 = int(input("ANGKA 1 : "))
-        angka2 = int(input("ANGKA 2 : "))
-        result = angka1 - angka2
-        print("HASIL KURANG2 : ", result)
+    print("====================")
+    for index, buku in enumerate(list_buku):
+        print(f"{index+1} | {buku[0]} | {buku[1]}")
+    
+    is_lanjut = input("lanjut input ? [Y/N] : \t")
+    if(is_lanjut == 'n' or is_lanjut == 'N'):
+            break
