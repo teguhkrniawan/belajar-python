@@ -1,12 +1,8 @@
-# casting
+# input
 
-data_int = 8
-print(type(data_int))
+panjang = int(input("Masukkan panjang : " ))
+lebar   = int(input("Masukkan lebar : " ))
 
-data_float = float(data_int)
-print(type(data_float))
+result = panjang * lebar
+print("luas persegi panjang ", result)
 
-data_string = str(data_float)
-print(type(data_string))
-
-print(data_string)
